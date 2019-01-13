@@ -19,7 +19,7 @@ function jsonpFlickr(uri) {
 let flickrAPI = {
     fetchPublicFeed: function() {
         return new Promise( (res, rej) => {
-            const url = 'http://api.flickr.com/services/feeds/photos_public.gne?format=json';
+            const url = 'https://api.flickr.com/services/feeds/photos_public.gne?format=json';
             jsonpFlickr(url)
                 .then( (data) => {
                     res(data);
@@ -29,7 +29,7 @@ let flickrAPI = {
 
     fetchAuthorFeed(authorId) {
         return new Promise( (res, rej) => { 
-            const url = `http://api.flickr.com/services/feeds/photos_public.gne?format=json&ids=${authorId}`;
+            const url = `https://api.flickr.com/services/feeds/photos_public.gne?format=json&ids=${authorId}`;
             jsonpFlickr(url)
             .then( (data) => {
                 res(data);
