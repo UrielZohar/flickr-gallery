@@ -1,0 +1,28 @@
+.gallery-wrapper {
+    width: 95%;
+    margin: 0 auto;
+    background-color: rgba(86, 89, 103, 0.1);
+    border: 2px solid #091134;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.gallery-manager {
+    margin: 0 auto;
+    width: 95%;
+    text-align: center;
+}
+
+.back-feed {
+    color: #3c4cdd;
+    font-size: 25px;
+    text-align: center;
+    width: 100%;
+}
+
+.back-feed.hide {
+    display: none;
+}
+
+@media screen and (max-width: 500px) {
+}
